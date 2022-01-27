@@ -1,6 +1,6 @@
 # Generated with JReleaser 1.0.0-SNAPSHOT at 2022-01-22T09:46:39.196814Z
 name: jrel-test
-version: 1.0.0-M6
+version: 1.0.0-M7
 summary: Release projects quickly and easily with JReleaser
 description: |
   JReleaser is a release automation tool. Its goal is to simplify creating releases and
@@ -25,12 +25,11 @@ apps:
   jrel-test:
     command: bin/jreleaser
     environment:
-      JAVA_HOME: "$SNAP/usr/lib/jvm/java/jre/"
+      JAVA_HOME: "$SNAP/usr/lib/jvm/java"
       PATH: "$SNAP/bin:$PATH:$JAVA_HOME/bin"
     plugs:
       - network
       - home
-      - system-files
 
 parts:
   jrel-test:
