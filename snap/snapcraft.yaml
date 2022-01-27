@@ -15,7 +15,7 @@ description: |
 
 grade: stable
 confinement: strict
-base: core20
+base: core18
 type: app
 
 architectures:
@@ -30,6 +30,7 @@ apps:
     plugs:
       - network
       - home
+      - personal-files
 
 parts:
   jrel-test:
