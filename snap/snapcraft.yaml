@@ -1,6 +1,6 @@
 # Generated with JReleaser 1.0.0-SNAPSHOT at 2022-01-22T09:46:39.196814Z
 name: jrel-test
-version: 1.0.0-M4
+version: 1.0.0-M5
 summary: Release projects quickly and easily with JReleaser
 description: |
   JReleaser is a release automation tool. Its goal is to simplify creating releases and
@@ -38,11 +38,11 @@ parts:
     source-checksum: sha256/fadea6015be5524283fb8c0caced1fcada8a2a414a5b27ca93026178954b0884
     stage-packages:
       - curl
-      - openjdk-8-jre
+      - openjdk-11-jre
       - ca-certificates
       - ca-certificates-java
     organize:
-      'usr/lib/jvm/java-8-openjdk*': 'usr/lib/jvm/java'
+      'usr/lib/jvm/java-11-openjdk*': 'usr/lib/jvm/java'
     prime:
       - -usr/lib/jvm/java/lib/security/cacerts
       - -usr/lib/jvm/java/jre/lib/security/cacerts
